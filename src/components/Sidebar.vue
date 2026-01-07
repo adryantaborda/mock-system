@@ -9,11 +9,11 @@
       <!-- Header -->
       <div class="p-4 border-b border-gray-200 flex items-center justify-between">
         <div v-if="!isCollapsed" class="flex items-center gap-2 flex-1">
-          <img src="/logo.png" alt="JD Eletronicos" class="w-8 h-8 object-contain" />
-          <span class="font-bold text-gray-800">JD Eletronicos</span>
+          <img src="/atlas.svg" alt="Atlas Vendas ERP" class="w-8 h-8 object-contain" />
+          <span class="font-bold text-gray-800">Atlas Vendas ERP</span>
         </div>
         <div v-else class="flex justify-center flex-1">
-          <img src="/logo.png" alt="JD Eletronicos" class="w-8 h-8 object-contain" />
+          <img src="/atlas.svg" alt="Atlas Vendas ERP" class="w-8 h-8 object-contain" />
         </div>
         <button
           @click="toggleCollapse"
@@ -49,14 +49,14 @@
       <!-- Footer -->
       <div class="p-4 border-t border-gray-200">
         <div v-if="!isCollapsed" class="flex items-center gap-3 px-4 py-2">
-          <img src="/logo.png" alt="JD Eletronicos" class="w-8 h-8 object-contain" />
+          <img src="/atlas.svg" alt="Atlas Vendas ERP" class="w-8 h-8 object-contain" />
           <div class="flex-1">
-            <p class="text-sm font-medium text-gray-800">JD Eletronicos</p>
+            <p class="text-sm font-medium text-gray-800">Atlas Vendas ERP</p>
             <p class="text-xs text-gray-500">Sistema de Vendas</p>
           </div>
         </div>
         <div v-else class="flex justify-center">
-          <img src="/logo.png" alt="JD Eletronicos" class="w-8 h-8 object-contain" />
+          <img src="/atlas.svg" alt="Atlas Vendas ERP" class="w-8 h-8 object-contain" />
         </div>
       </div>
     </div>

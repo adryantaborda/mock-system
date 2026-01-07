@@ -3,15 +3,15 @@ import { defineStore } from 'pinia'
 export const useSettingsStore = defineStore('settings', {
   state: () => ({
     general: {
-      companyName: 'JD Eletronicos',
+      companyName: 'Atlas Vendas ERP',
       cnpj: '12.345.678/0001-90',
-      email: 'contato@jdeletronicos.com.br',
+      email: 'contato@atlasvendas.com.br',
       phone: '(11) 3456-7890',
       address: 'Rua das Flores, 123',
       city: 'São Paulo',
       state: 'SP',
       zipCode: '01234-567',
-      website: 'www.jdeletronicos.com.br'
+      website: 'www.atlasvendas.com.br'
     },
     preferences: {
       language: 'pt-BR',
@@ -35,7 +35,7 @@ export const useSettingsStore = defineStore('settings', {
       lowStockThreshold: 10,
       criticalStockThreshold: 5,
       enableAlerts: true,
-      alertEmail: 'estoque@jdeletronicos.com.br'
+      alertEmail: 'estoque@atlasvendas.com.br'
     },
     sales: {
       defaultPaymentMethod: 'Cartão de Crédito',
