@@ -22,14 +22,14 @@
       </button>
     </div>
 
-    <CalendarView />
+    <EnhancedCalendarView />
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import { useAppointmentsStore } from '../stores/appointments'
-import CalendarView from './CalendarView.vue'
+import EnhancedCalendarView from './EnhancedCalendarView.vue'
 
 const appointmentsStore = useAppointmentsStore()
 
