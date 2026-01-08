@@ -8,7 +8,7 @@
     <div class="flex gap-3 mb-6">
       <button
         @click="addAppointment"
-        class="px-6 py-2.5 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 active:bg-blue-700 transition-colors"
+        class="px-6 py-2.5 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 active:bg-navy-900 transition-colors"
       >
         <i class="pi pi-plus mr-2"></i>
         Nova Venda
@@ -47,7 +47,7 @@ const addAppointment = () => {
   ]
   
   const colors = [
-    'bg-blue-50/80 border-blue-300/60 text-blue-800',
+    'bg-green-50/80 border-green-300/60 text-navy-900',
     'bg-purple-50/80 border-purple-300/60 text-purple-800',
     'bg-green-50/80 border-green-300/60 text-green-800',
     'bg-amber-50/80 border-amber-300/60 text-amber-800',

@@ -26,7 +26,9 @@ import {
   faDesktop,
   faClock,
   faKeyboard,
-  faMouse
+  faMouse,
+  faCalculator,
+  faDollarSign
 } from '@fortawesome/free-solid-svg-icons'
 
 import App from './App.vue'
@@ -58,7 +60,9 @@ library.add(
   faDesktop,
   faClock,
   faKeyboard,
-  faMouse
+  faMouse,
+  faCalculator,
+  faDollarSign
 )
 
 const app = createApp(App)

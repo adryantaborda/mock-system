@@ -89,7 +89,7 @@ const handleDragEnd = () => {
 
 const getStatusClass = (status) => {
   const classes = {
-    agendado: 'bg-blue-100 text-blue-700',
+    agendado: 'bg-green-100 text-navy-900',
     confirmado: 'bg-green-100 text-green-700',
     concluido: 'bg-purple-100 text-purple-700',
     cancelado: 'bg-red-100 text-red-700'

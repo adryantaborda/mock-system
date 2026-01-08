@@ -255,9 +255,10 @@ export const useSalesStore = defineStore('sales', {
         id: Date.now(),
         saleNumber: `VND-${String(this.sales.length + 1).padStart(3, '0')}`,
         ...sale,
-        status: 'pendente'
+        status: sale.status || 'pendente'
       }
-      this.sales.push(newSale)
+      this.sales.unshift(newSale) // Adicionar no início para aparecer primeiro
+      return newSale
     },
     updateSaleStatus(id, status) {
       const sale = this.sales.find(s => s.id === id)

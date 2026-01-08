@@ -10,7 +10,7 @@
       <div class="bg-white rounded-lg p-6 border border-gray-200">
         <div class="flex items-center justify-between mb-2">
           <span class="text-gray-500 text-sm">Total de Vendas</span>
-          <font-awesome-icon :icon="['fas', 'shopping-cart']" class="text-blue-500" />
+          <font-awesome-icon :icon="['fas', 'shopping-cart']" class="text-green-500" />
         </div>
         <p class="text-2xl font-bold text-gray-800">R$ 125.450,00</p>
         <p class="text-sm text-green-600 mt-1">
@@ -156,7 +156,7 @@ const salesChartOption = {
       smooth: true,
       data: [32000, 35000, 28000, 42000, 38000, 45000, 52000, 48000, 55000, 60000, 58000, 65000],
       itemStyle: {
-        color: '#3b82f6'
+        color: '#00699b'
       },
       areaStyle: {
         color: {
@@ -166,8 +166,8 @@ const salesChartOption = {
           x2: 0,
           y2: 1,
           colorStops: [
-            { offset: 0, color: 'rgba(59, 130, 246, 0.3)' },
-            { offset: 1, color: 'rgba(59, 130, 246, 0.05)' }
+            { offset: 0, color: 'rgba(0, 105, 155, 0.3)' },
+            { offset: 1, color: 'rgba(0, 105, 155, 0.05)' }
           ]
         }
       }
@@ -255,7 +255,7 @@ const categoryChartOption = {
         show: false
       },
       data: [
-        { value: 45000, name: 'Smartphones', itemStyle: { color: '#3b82f6' } },
+        { value: 45000, name: 'Smartphones', itemStyle: { color: '#00699b' } },
         { value: 35000, name: 'Notebooks', itemStyle: { color: '#8b5cf6' } },
         { value: 28000, name: 'Tablets', itemStyle: { color: '#10b981' } },
         { value: 17500, name: 'Acessórios', itemStyle: { color: '#f59e0b' } }

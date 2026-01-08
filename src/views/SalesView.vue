@@ -25,7 +25,7 @@
       </div>
       <div class="bg-white rounded-lg p-4 border border-gray-200">
         <div class="text-sm text-gray-500 mb-1">Receita Total</div>
-        <div class="text-2xl font-bold text-blue-600">{{ formatCurrency(totalRevenue) }}</div>
+        <div class="text-2xl font-bold text-navy-800">{{ formatCurrency(totalRevenue) }}</div>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
               @input="handleSearch"
               type="text"
               placeholder="Buscar por número da venda, cliente ou produto..."
-              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@
           <select
             v-model="selectedStatus"
             @change="handleStatusChange"
-            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
           >
             <option value="all">Todos os Status</option>
             <option value="concluida">Concluídas</option>
@@ -63,7 +63,7 @@
         <!-- Botão Nova Venda -->
         <button
           @click="showNewSaleModal = true"
-          class="px-6 py-2.5 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 active:bg-blue-700 transition-colors whitespace-nowrap"
+          class="px-6 py-2.5 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 active:bg-navy-900 transition-colors whitespace-nowrap"
         >
           <i class="pi pi-plus mr-2"></i>
           Nova Venda

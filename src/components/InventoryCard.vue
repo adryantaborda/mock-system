@@ -29,7 +29,7 @@
       </div>
       <button
         @click.stop="$emit('edit', product.id)"
-        class="text-gray-400 hover:text-blue-600 transition-colors p-1"
+        class="text-gray-400 hover:text-navy-800 transition-colors p-1"
         aria-label="Editar produto"
       >
         <i class="pi pi-pencil text-sm"></i>
@@ -75,7 +75,7 @@
       </div>
       <div>
         <div class="text-xs text-gray-500 mb-1">Valor Total</div>
-        <div class="text-sm font-bold text-blue-600">{{ formatCurrency(product.totalValue) }}</div>
+        <div class="text-sm font-bold text-navy-800">{{ formatCurrency(product.totalValue) }}</div>
       </div>
     </div>
 

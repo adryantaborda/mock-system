@@ -12,7 +12,7 @@
         <div
           :class="[
             'w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg',
-            client.status === 'ativo' ? 'bg-blue-500' : 'bg-gray-400'
+            client.status === 'ativo' ? 'bg-green-500' : 'bg-gray-400'
           ]"
         >
           {{ getInitials(client.name) }}

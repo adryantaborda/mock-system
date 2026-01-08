@@ -59,7 +59,7 @@
       </div>
       <div class="flex items-center justify-between pt-2 border-t border-gray-100">
         <span class="text-lg font-bold text-gray-800">Total:</span>
-        <span class="text-2xl font-bold text-blue-600">{{ formatCurrency(sale.total) }}</span>
+        <span class="text-2xl font-bold text-navy-800">{{ formatCurrency(sale.total) }}</span>
       </div>
     </div>
 

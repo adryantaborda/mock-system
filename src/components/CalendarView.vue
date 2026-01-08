@@ -31,7 +31,7 @@
         :data-date="day.date"
         :class="[
           'day-column rounded-lg p-3 min-h-[600px]',
-          day.isToday ? 'bg-blue-50/30 border-2 border-blue-300' : 'bg-gray-50/50 border border-gray-200'
+          day.isToday ? 'bg-green-50/30 border-2 border-green-300' : 'bg-gray-50/50 border border-gray-200'
         ]"
         @drop="handleDrop(day.date, $event)"
         @dragover.prevent="handleDragOver"
@@ -45,7 +45,7 @@
           <div
             :class="[
               'text-lg font-bold',
-              day.isToday ? 'text-blue-600' : 'text-gray-800'
+              day.isToday ? 'text-navy-800' : 'text-gray-800'
             ]"
           >
             {{ day.dayNumber }}

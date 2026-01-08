@@ -17,7 +17,7 @@
               @input="handleSearch"
               type="text"
               placeholder="Buscar produtos..."
-              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
             />
           </div>
         </div>
@@ -27,7 +27,7 @@
           <select
             v-model="selectedCategory"
             @change="handleCategoryChange"
-            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
           >
             <option value="all">Todas as Categorias</option>
             <option

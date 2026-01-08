@@ -13,7 +13,7 @@ export const useProductsStore = defineStore('products', {
         description: 'iPhone 15 Pro Max 256GB Titanium',
         brand: 'Apple',
         rating: 4.8,
-        color: 'bg-blue-50/80 border-blue-300/60'
+        color: 'bg-green-50/80 border-green-300/60'
       },
       {
         id: 2,
@@ -145,7 +145,7 @@ export const useProductsStore = defineStore('products', {
         description: 'Apple Watch Series 9 GPS 45mm',
         brand: 'Apple',
         rating: 4.8,
-        color: 'bg-blue-50/80 border-blue-300/60'
+        color: 'bg-green-50/80 border-green-300/60'
       },
       {
         id: 13,

@@ -14,7 +14,7 @@
             <input
               v-model="dateRange.start"
               type="date"
-              class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
             />
           </div>
           <div>
@@ -22,13 +22,13 @@
             <input
               v-model="dateRange.end"
               type="date"
-              class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
             />
           </div>
           <div class="flex items-end gap-2">
             <button
               @click="applyDateRange"
-              class="px-4 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+              class="px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
             >
               Aplicar
             </button>
@@ -55,8 +55,8 @@
       <div class="bg-white rounded-lg p-6 border border-gray-200">
         <div class="flex items-center justify-between mb-2">
           <span class="text-gray-500 text-sm">Total de Vendas</span>
-          <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-            <i class="pi pi-shopping-cart text-blue-600"></i>
+          <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="pi pi-shopping-cart text-navy-800"></i>
           </div>
         </div>
         <p class="text-3xl font-bold text-gray-800">{{ reportData.totalSales }}</p>
@@ -163,8 +163,8 @@
             class="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
           >
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                <span class="text-blue-600 font-bold text-sm">{{ day.day[0] }}</span>
+              <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                <span class="text-navy-800 font-bold text-sm">{{ day.day[0] }}</span>
               </div>
               <div>
                 <div class="font-medium text-gray-800">{{ day.day }}</div>
@@ -188,7 +188,7 @@
               <div class="font-medium text-gray-800">Taxa de Conversão</div>
               <div class="text-sm text-gray-500">Agendamentos convertidos em vendas</div>
             </div>
-            <div class="text-2xl font-bold text-blue-600">{{ reportData.conversionRate }}%</div>
+            <div class="text-2xl font-bold text-navy-800">{{ reportData.conversionRate }}%</div>
           </div>
           <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
             <div>
@@ -308,14 +308,14 @@ const salesOverTimeOption = computed(() => ({
     type: 'line',
     smooth: true,
     data: [280000, 310000, 295000, 369500],
-    itemStyle: { color: '#3b82f6' },
+    itemStyle: { color: '#00699b' },
     areaStyle: {
       color: {
         type: 'linear',
         x: 0, y: 0, x2: 0, y2: 1,
         colorStops: [
-          { offset: 0, color: 'rgba(59, 130, 246, 0.3)' },
-          { offset: 1, color: 'rgba(59, 130, 246, 0.05)' }
+          { offset: 0, color: 'rgba(0, 105, 155, 0.3)' },
+          { offset: 1, color: 'rgba(0, 105, 155, 0.05)' }
         ]
       }
     }
@@ -348,7 +348,7 @@ const categorySalesOption = computed(() => ({
     },
     labelLine: { show: false },
     data: [
-      { value: 450000, name: 'Smartphones', itemStyle: { color: '#3b82f6' } },
+      { value: 450000, name: 'Smartphones', itemStyle: { color: '#00699b' } },
       { value: 350000, name: 'Notebooks', itemStyle: { color: '#8b5cf6' } },
       { value: 280000, name: 'Tablets', itemStyle: { color: '#10b981' } },
       { value: 175000, name: 'Acessórios', itemStyle: { color: '#f59e0b' } }

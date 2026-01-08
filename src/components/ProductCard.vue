@@ -46,7 +46,7 @@
         :class="[
           'px-4 py-2 rounded-lg font-medium transition-colors',
           product.stock > 0
-            ? 'bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700'
+            ? 'bg-green-500 text-white hover:bg-navy-800 active:bg-navy-900'
             : 'bg-gray-200 text-gray-400 cursor-not-allowed'
         ]"
       >

@@ -19,7 +19,7 @@ export const useAppointmentsStore = defineStore('appointments', {
           date: getDateString(0),
           duration: 60,
           value: 8999.00,
-          color: 'bg-blue-50/80 border-blue-300/60 text-blue-800',
+          color: 'bg-green-50/80 border-green-300/60 text-navy-900',
           status: 'agendado',
           type: 'venda'
         },

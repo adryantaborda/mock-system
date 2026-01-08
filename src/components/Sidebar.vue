@@ -34,7 +34,7 @@
                 'flex items-center gap-3 px-4 py-3 rounded-lg transition-colors',
                 isCollapsed ? 'justify-center' : '',
                 isActive(item.path) 
-                  ? 'bg-blue-50 text-blue-600 border-l-4 border-blue-500' 
+                  ? 'bg-green-50 text-navy-800 border-l-4 border-green-500' 
                   : 'text-gray-700 hover:bg-gray-50'
               ]"
               :title="isCollapsed ? item.label : ''"
@@ -51,21 +51,33 @@
         <div v-if="!isCollapsed" class="flex items-center gap-3 px-4 py-2">
           <img src="/atlas.svg" alt="Atlas Vendas ERP" class="w-8 h-8 object-contain" />
           <div class="flex-1">
-            <p class="text-sm font-medium text-gray-800">Atlas Vendas ERP</p>
+            <p class="text-sm font-medium text-gray-800">{{ userEmail || 'Usuário' }}</p>
             <p class="text-xs text-gray-500">Sistema de Vendas</p>
           </div>
         </div>
         <div v-else class="flex justify-center">
           <img src="/atlas.svg" alt="Atlas Vendas ERP" class="w-8 h-8 object-contain" />
         </div>
+        <button
+          @click="handleLogout"
+          :class="[
+            'w-full mt-3 px-4 py-2 rounded-lg font-medium transition-colors text-sm',
+            isCollapsed ? 'px-2' : '',
+            'bg-red-50 text-red-600 hover:bg-red-100'
+          ]"
+        >
+          <i class="pi pi-sign-out mr-2"></i>
+          <span v-if="!isCollapsed">Sair</span>
+        </button>
       </div>
     </div>
   </aside>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, computed } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useAuthStore } from '../stores/auth'
 import { 
   faChartLine,
   faCalendarAlt,
@@ -77,11 +89,22 @@ import {
   faCog,
   faStore,
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
+  faCalculator,
+  faDollarSign
 } from '@fortawesome/free-solid-svg-icons'
 
 const route = useRoute()
+const router = useRouter()
+const authStore = useAuthStore()
 const isCollapsed = ref(false)
+
+const userEmail = computed(() => authStore.user.email)
+
+const handleLogout = () => {
+  authStore.logout()
+  router.push('/login')
+}
 
 const storeIcon = faStore
 const chevronLeftIcon = faChevronLeft
@@ -114,24 +137,36 @@ const menuItems = [
   },
   {
     id: 5,
+    label: 'Terminal de Vendas',
+    icon: faCalculator,
+    path: '/pos'
+  },
+  {
+    id: 6,
     label: 'Vendas',
     icon: faShoppingCart,
     path: '/vendas'
   },
   {
-    id: 6,
+    id: 7,
+    label: 'Financeiro',
+    icon: faDollarSign,
+    path: '/financeiro'
+  },
+  {
+    id: 8,
     label: 'Relatórios',
     icon: faFileAlt,
     path: '/relatorios'
   },
   {
-    id: 7,
+    id: 9,
     label: 'Estoque',
     icon: faWarehouse,
     path: '/estoque'
   },
   {
-    id: 8,
+    id: 10,
     label: 'Configurações',
     icon: faCog,
     path: '/configuracoes'

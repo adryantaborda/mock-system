@@ -18,7 +18,7 @@
                 :class="[
                   'w-full text-left px-4 py-3 rounded-lg transition-colors flex items-center gap-3',
                   activeSection === section.id
-                    ? 'bg-blue-50 text-blue-600 border-l-4 border-blue-500'
+                    ? 'bg-green-50 text-navy-800 border-l-4 border-green-500'
                     : 'text-gray-700 hover:bg-gray-50'
                 ]"
               >
@@ -41,7 +41,7 @@
                   <input
                     v-model="settings.general.companyName"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -49,7 +49,7 @@
                   <input
                     v-model="settings.general.cnpj"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -57,7 +57,7 @@
                   <input
                     v-model="settings.general.email"
                     type="email"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -65,7 +65,7 @@
                   <input
                     v-model="settings.general.phone"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -73,7 +73,7 @@
                   <input
                     v-model="settings.general.address"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -81,7 +81,7 @@
                   <input
                     v-model="settings.general.city"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -89,7 +89,7 @@
                   <input
                     v-model="settings.general.state"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -97,7 +97,7 @@
                   <input
                     v-model="settings.general.zipCode"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div class="md:col-span-2">
@@ -105,14 +105,14 @@
                   <input
                     v-model="settings.general.website"
                     type="text"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
               </div>
               <div class="flex justify-end pt-4 border-t border-gray-200">
                 <button
                   @click="saveSettings('general')"
-                  class="px-6 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   Salvar Alterações
                 </button>
@@ -129,7 +129,7 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1">Idioma</label>
                   <select
                     v-model="settings.preferences.language"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   >
                     <option value="pt-BR">Português (Brasil)</option>
                     <option value="en-US">English (US)</option>
@@ -140,7 +140,7 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1">Moeda</label>
                   <select
                     v-model="settings.preferences.currency"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   >
                     <option value="BRL">Real (BRL)</option>
                     <option value="USD">Dólar (USD)</option>
@@ -151,7 +151,7 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1">Formato de Data</label>
                   <select
                     v-model="settings.preferences.dateFormat"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   >
                     <option value="DD/MM/YYYY">DD/MM/YYYY</option>
                     <option value="MM/DD/YYYY">MM/DD/YYYY</option>
@@ -162,7 +162,7 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1">Formato de Hora</label>
                   <select
                     v-model="settings.preferences.timeFormat"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   >
                     <option value="24h">24 horas</option>
                     <option value="12h">12 horas (AM/PM)</option>
@@ -172,7 +172,7 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1">Fuso Horário</label>
                   <select
                     v-model="settings.preferences.timezone"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   >
                     <option value="America/Sao_Paulo">America/São Paulo (GMT-3)</option>
                     <option value="America/New_York">America/New York (GMT-5)</option>
@@ -186,14 +186,14 @@
                     type="number"
                     min="10"
                     max="100"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
               </div>
               <div class="flex justify-end pt-4 border-t border-gray-200">
                 <button
                   @click="saveSettings('preferences')"
-                  class="px-6 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   Salvar Alterações
                 </button>
@@ -217,7 +217,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -231,7 +231,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -245,7 +245,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -259,7 +259,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -273,7 +273,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -287,14 +287,14 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
               </div>
               <div class="flex justify-end pt-4 border-t border-gray-200">
                 <button
                   @click="saveSettings('notifications')"
-                  class="px-6 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   Salvar Alterações
                 </button>
@@ -318,7 +318,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -332,7 +332,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div>
@@ -342,7 +342,7 @@
                     type="number"
                     min="1"
                     max="50"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -352,7 +352,7 @@
                     type="number"
                     min="1"
                     max="20"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div class="md:col-span-2">
@@ -360,14 +360,14 @@
                   <input
                     v-model="settings.inventory.alertEmail"
                     type="email"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
               </div>
               <div class="flex justify-end pt-4 border-t border-gray-200">
                 <button
                   @click="saveSettings('inventory')"
-                  class="px-6 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   Salvar Alterações
                 </button>
@@ -384,7 +384,7 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1">Forma de Pagamento Padrão</label>
                   <select
                     v-model="settings.sales.defaultPaymentMethod"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   >
                     <option value="Cartão de Crédito">Cartão de Crédito</option>
                     <option value="Cartão de Débito">Cartão de Débito</option>
@@ -400,7 +400,7 @@
                     type="number"
                     min="0"
                     max="100"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -414,7 +414,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -428,7 +428,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg md:col-span-2">
@@ -442,14 +442,14 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
               </div>
               <div class="flex justify-end pt-4 border-t border-gray-200">
                 <button
                   @click="saveSettings('sales')"
-                  class="px-6 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   Salvar Alterações
                 </button>
@@ -469,7 +469,7 @@
                     type="number"
                     min="5"
                     max="120"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div>
@@ -479,7 +479,7 @@
                     type="number"
                     min="3"
                     max="10"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
                   />
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -493,7 +493,7 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -507,14 +507,14 @@
                       type="checkbox"
                       class="sr-only peer"
                     />
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-navy-800"></div>
                   </label>
                 </div>
               </div>
               <div class="flex justify-end pt-4 border-t border-gray-200">
                 <button
                   @click="saveSettings('security')"
-                  class="px-6 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   Salvar Alterações
                 </button>
@@ -537,12 +537,12 @@
                   Exportar Configurações
                 </button>
               </div>
-              <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                <h3 class="font-semibold text-blue-800 mb-2">Importar Configurações</h3>
-                <p class="text-sm text-blue-700 mb-3">Restaurar configurações de um backup</p>
+              <div class="p-4 bg-green-50 border border-green-200 rounded-lg">
+                <h3 class="font-semibold text-navy-900 mb-2">Importar Configurações</h3>
+                <p class="text-sm text-navy-900 mb-3">Restaurar configurações de um backup</p>
                 <button
                   @click="importSettings"
-                  class="px-4 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  class="px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
                 >
                   <i class="pi pi-upload mr-2"></i>
                   Importar Configurações

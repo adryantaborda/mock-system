@@ -24,7 +24,7 @@
               <input
                 v-model="editedAppointment.title"
                 type="text"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               />
             </div>
             <div>
@@ -32,7 +32,7 @@
               <input
                 v-model="editedAppointment.client"
                 type="text"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               />
             </div>
             <div>
@@ -40,7 +40,7 @@
               <input
                 v-model="editedAppointment.date"
                 type="date"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               />
             </div>
             <div>
@@ -48,7 +48,7 @@
               <input
                 v-model="editedAppointment.time"
                 type="time"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               />
             </div>
             <div>
@@ -56,7 +56,7 @@
               <input
                 v-model.number="editedAppointment.duration"
                 type="number"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               />
             </div>
             <div>
@@ -65,14 +65,14 @@
                 v-model.number="editedAppointment.value"
                 type="number"
                 step="0.01"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1">Status</label>
               <select
                 v-model="editedAppointment.status"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
               >
                 <option value="agendado">Agendado</option>
                 <option value="confirmado">Confirmado</option>
@@ -99,7 +99,7 @@
             </div>
             <div>
               <div class="text-sm text-gray-500">Valor Total</div>
-              <div class="font-bold text-lg text-blue-600">
+              <div class="font-bold text-lg text-navy-800">
                 {{ formatCurrency(editedAppointment.value) }}
               </div>
             </div>
@@ -122,7 +122,7 @@
       <div class="sticky bottom-0 bg-gray-50 border-t border-gray-200 p-6 flex gap-3">
         <button
           @click="saveChanges"
-          class="flex-1 px-4 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+          class="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-navy-800 transition-colors"
         >
           <i class="pi pi-check mr-2"></i>
           Salvar Alterações
@@ -175,7 +175,7 @@ const confirmDelete = () => {
 
 const getStatusClass = (status) => {
   const classes = {
-    agendado: 'bg-blue-100 text-blue-700',
+    agendado: 'bg-green-100 text-navy-900',
     confirmado: 'bg-green-100 text-green-700',
     concluido: 'bg-purple-100 text-purple-700',
     cancelado: 'bg-red-100 text-red-700'

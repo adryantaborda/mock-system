@@ -35,7 +35,7 @@
               :class="[
                 'px-4 py-2 rounded-md text-sm font-medium transition-colors',
                 currentView === view.value
-                  ? 'bg-white text-blue-600 shadow-sm'
+                  ? 'bg-white text-navy-800 shadow-sm'
                   : 'text-gray-600 hover:text-gray-800'
               ]"
             >
@@ -59,7 +59,7 @@
         <h3 class="font-semibold text-gray-800">Filtros</h3>
         <button
           @click="showFilters = !showFilters"
-          class="text-sm text-blue-600 hover:text-blue-700"
+          class="text-sm text-navy-800 hover:text-navy-900"
         >
           <i :class="showFilters ? 'pi pi-chevron-up' : 'pi pi-chevron-down' + ' mr-1'"></i>
           {{ showFilters ? 'Ocultar' : 'Mostrar' }} Filtros
@@ -75,7 +75,7 @@
             @input="applyFilters"
             type="text"
             placeholder="Cliente, produto..."
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
           />
         </div>
 
@@ -85,7 +85,7 @@
           <select
             v-model="filters.client"
             @change="applyFilters"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
           >
             <option value="all">Todos os Clientes</option>
             <option v-for="client in uniqueClients" :key="client" :value="client">
@@ -100,7 +100,7 @@
           <select
             v-model="filters.status"
             @change="applyFilters"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
           >
             <option value="all">Todos</option>
             <option value="agendado">Agendado</option>
@@ -118,7 +118,7 @@
             @input="applyFilters"
             type="number"
             placeholder="R$ 0,00"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700"
           />
         </div>
       </div>
@@ -132,8 +132,8 @@
             <div class="text-sm text-gray-500 mb-1">Total Agendado</div>
             <div class="text-2xl font-bold text-gray-800">{{ filteredAppointments.length }}</div>
           </div>
-          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-            <i class="pi pi-calendar text-blue-600 text-xl"></i>
+          <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="pi pi-calendar text-navy-800 text-xl"></i>
           </div>
         </div>
       </div>
@@ -183,13 +183,13 @@
             v-for="day in weekDays"
             :key="day.date"
             class="p-3 text-center border-r border-gray-200 last:border-r-0"
-            :class="day.isToday ? 'bg-blue-50' : 'bg-gray-50'"
+            :class="day.isToday ? 'bg-green-50' : 'bg-gray-50'"
           >
             <div class="text-xs text-gray-500 uppercase mb-1">{{ day.dayName }}</div>
             <div
               :class="[
                 'text-lg font-bold',
-                day.isToday ? 'text-blue-600' : 'text-gray-800'
+                day.isToday ? 'text-navy-800' : 'text-gray-800'
               ]"
             >
               {{ day.dayNumber }}
@@ -249,7 +249,7 @@
             :key="day.date"
             :class="[
               'min-h-[120px] p-2 border-r border-b border-gray-200',
-              day.isToday ? 'bg-blue-50/30' : day.isCurrentMonth ? 'bg-white' : 'bg-gray-50/50'
+              day.isToday ? 'bg-green-50/30' : day.isCurrentMonth ? 'bg-white' : 'bg-gray-50/50'
             ]"
             @drop="handleDrop(day.date, null, $event)"
             @dragover.prevent="handleDragOver"
@@ -258,7 +258,7 @@
             <div
               :class="[
                 'text-sm font-medium mb-1',
-                day.isToday ? 'text-blue-600' : day.isCurrentMonth ? 'text-gray-800' : 'text-gray-400'
+                day.isToday ? 'text-navy-800' : day.isCurrentMonth ? 'text-gray-800' : 'text-gray-400'
               ]"
             >
               {{ day.dayNumber }}
@@ -591,7 +591,7 @@ const deleteAppointment = (id) => {
 
 const getStatusClass = (status) => {
   const classes = {
-    agendado: 'bg-blue-100 text-blue-700',
+    agendado: 'bg-green-100 text-navy-900',
     confirmado: 'bg-green-100 text-green-700',
     concluido: 'bg-purple-100 text-purple-700',
     cancelado: 'bg-red-100 text-red-700'
